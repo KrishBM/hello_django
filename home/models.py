@@ -7,3 +7,6 @@ class Contact(models.Model):
     mobile=models.CharField(max_length=10)
     desc=models.TextField()
     date=models.DateField()
+
+    def __str__(self):
+        return self.email
